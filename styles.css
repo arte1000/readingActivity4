@@ -1,0 +1,136 @@
+/* CSS */
+body {
+    background: url('imgs/279.jpg');
+    height: 200vh; /* Increase the height to enable scrolling */
+    position: relative; /* Relative positioning to place images */
+}
+
+.spiderman-image {
+    position: absolute;
+    width: 20%;
+}
+
+.spiderman-image:nth-child(1) {
+    top: 10%;
+    left: 5%;
+    width: 30%;
+}
+
+.spiderman-image:nth-child(2) {
+    top: 5%;
+    right: 20%;
+    width: 25%;
+}
+
+.spiderman-image:nth-child(3) {
+    bottom: 60%;
+    left: 15%;
+    width: 20%;
+}
+
+.spiderman-image:nth-child(4) {
+    bottom: 40%;
+    right: 10%;
+    width: 35%;
+}
+
+.spiderman-image:nth-child(5) {
+    bottom: 20%;
+    left: 30%;
+    width: 25%;
+}
+
+.spiderman-image:nth-child(6) {
+    bottom: 10%;
+    right: 5%;
+    width: 30%;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Higher z-index to place it over the images */
+    font-size: 6em;
+    color: red;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: blue;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: darkred;
+}
+
+/* Menu */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    pointer-events: none;
+}
+
+.menu-item {
+    position: absolute;
+    z-index: 20; /* Higher z-index to place it over the images */
+    font-size: 2em;
+    color: blue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    pointer-events: auto;
+    font-family: 'Comic Sans MS', 'Chalkduster', 'Helvetica', 'Arial', sans-serif;
+}
+
+.menu-item:hover {
+    color: red;
+}
+
+.menu-item:nth-child(1) {
+    top: 20%;
+    left: 10%;
+}
+
+.menu-item:nth-child(2) {
+    top: 40%;
+    left: 30%;
+}
+
+.menu-item:nth-child(3) {
+    top: 60%;
+    left: 50%;
+}
+
+.menu-item:nth-child(4) {
+    top: 80%;
+    left: 70%;
+}
